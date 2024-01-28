@@ -1,0 +1,138 @@
+.container {
+  background-image: url(../images/AppBreweryWallpaper\ 5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 778px;
+  width: 1580px;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 1%;
+  }
+.button-34 {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 5px 15px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+#center {
+  text-align: center;
+  margin: 180px;
+}
+
+  #h1 {
+    font-size: 52px;
+    font-weight: 900;
+    font-stretch: expanded;
+    display: grid;
+    justify-content: space-evenly;
+  }
+  #info{
+      font-size: 20px;
+      font-weight: bold;
+  }
+#a {
+  font-size: 11px;
+  color: white;
+  background-color: #e7185d;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+#b {
+  font-size: 11px;
+  font-weight: bold; 
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+#work{
+    text-align: center;
+    
+}
+.rooms{
+   align-items: center;
+   display:grid;
+}
+#aprt{
+    font-size: 42;
+    font-weight:bold;
+    text-align: center;
+    margin-bottom:50px;
+    padding: 20px;
+}
+#Apartment{
+    background-color: rgb(224, 224, 224);
+    padding: 0 0 100px;
+}
+.rooms1-detail{
+    background-color: white;
+}
+.room1{
+    display: flex;
+}
+.room1>img{
+    height: 222px;
+    width: 333px;
+}
+#class-room{
+    text-align: center;
+    background-color: white;
+    margin: 0 50px;
+}
+  #card-info{
+ border: 1px .3
+ 
+ 3;
+  }
+#card-info>p>b{
+   color: black;
+}
+#card-info>p{
+    color: gray;
+}
+.rooms2-detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+.room2{
+  display: flex;
+}
+.room2>img{
+  height: 222px;
+  width: 333px;
+}
+#description{
+  display: grid;
+}
+#description>img{
+  height: 80px;
+  width: 80px;
+}
