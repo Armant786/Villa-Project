@@ -1,11 +1,11 @@
-.container {
+.mean-container{
   background-image: url(../images/AppBreweryWallpaper\ 5.jpg);
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
-  position: absolute;
+  position: relative;
   height: 778px;
   width: 1580px;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -38,12 +38,12 @@ nav {
   word-break: break-word;
   border: 0;
 }
-#center {
+#head-line {
   text-align: center;
   margin: 180px;
 }
 
-  #h1 {
+  #men-line{
     font-size: 52px;
     font-weight: 900;
     font-stretch: expanded;
@@ -70,15 +70,45 @@ nav {
   border-radius: 20px;
   padding: 8px 20px;
 }
-#work{
-    text-align: center;
-    
+#work-cont{
+  width: 80%; 
+  margin: 50px auto;
+  align-items: center;
+  margin-left: 50px ;
+   text-align: center;
 }
-.rooms{
+.rooms-img{
+   display:grid; 
    align-items: center;
-   display:grid;
+   justify-content: center;
+   grid-template-rows: 200px 200px 320px;
+   gap: 30px;
 }
-#aprt{
+.image-1{
+  height: 250px;
+  width: 530px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.image-2{
+  height: 200px;
+  width: 250px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.image-3{
+  height: 200px;
+  width: 250px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.image-4{
+  height: 500px;
+  width: 350px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+#mean-apartment{
     font-size: 42;
     font-weight:bold;
     text-align: center;
@@ -88,35 +118,38 @@ nav {
 #Apartment{
     background-color: rgb(224, 224, 224);
     padding: 0 0 100px;
+    justify-content: space-evenly;
+    text-align: center;
 }
 .rooms1-detail{
     background-color: white;
 }
 .room1{
     display: flex;
+    gap: 20px;
+    margin: 10px;
 }
 .room1>img{
-    height: 222px;
-    width: 333px;
+    height: 232px;
+    width: 343px;
 }
-#class-room{
+#RowA-rooms{
     text-align: center;
     background-color: white;
     margin: 0 50px;
 }
-  #card-info{
- border: 1px .3
- 
- 3;
+#A1room-detail{
+ border: 1px ;
   }
-#card-info>p>b{
+#A1room-detail>p>b{
    color: black;
 }
-#card-info>p{
+#A1room-detail>p{
     color: gray;
 }
 .rooms2-detail{
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: space-evenly;
   background-color: white;
@@ -124,15 +157,84 @@ nav {
 
 .room2{
   display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  column-gap: 0px;
 }
 .room2>img{
-  height: 222px;
-  width: 333px;
+  height: 232px;
+  width: 343px;
 }
 #description{
+  width: 1000px;
+  height: 900px;
   display: grid;
+  grid-template-columns: 300px;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0 20%;
 }
-#description>img{
-  height: 80px;
-  width: 80px;
+
+#posts-head>posts1{
+  display: flex;
+  align-items: center
+  justify-content: space-evenly;
+  text-align: center;
+}
+#posts1>img{
+  /* height: 80px;
+  width: 80px; */
+}
+
+#posts1{
+  display: flex;
+  width: 900px;
+  flex-direction:;
+
+}
+#posts2{
+  display: flex;
+  width: 900px;
+}
+#post1{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#post2{
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+#post3{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#post4{
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+#post5{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#post6{
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+#about{
+  height: 500px;
+  width: 300px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  line-height: 30px;
+}
+#about>img{
+  width: ;
+  height:;
 }
