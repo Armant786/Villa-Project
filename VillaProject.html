@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="VillaProject.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <div class="mean-container">
       <nav>
         <h2>Villa</h2>
-        <button class="button-34" role="button">Menu</button>
+        <button class="hamburger" role="button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </nav>
       <div id="head-line">
         <h1 id="men-line">Welcome to Villa resort</h1>
@@ -29,18 +38,22 @@
     <div class="rooms-img">
       <img
         class="image-1"
-        src="../images/bfd982_9aef4e83f0b645e3a707223a2ca56812~mv2.webp"
+        src="./images/bfd982_9aef4e83f0b645e3a707223a2ca56812~mv2.webp"
         alt=""
       />
       <img
         class="image-2"
-        src="../images/1 toughened-bending-glass-500x500.webp"
+        src="./images/1 toughened-bending-glass-500x500.webp"
         alt=""
       />
-      <img class="image-3" src="../images/Market_hospitality.jpg" alt="" />
+      <img
+        class="image-3"
+        src="https://preview.colorlib.com/theme/hiroto/img/home-room/hr-3.jpg"
+        alt=""
+      />
       <img
         class="image-4"
-        src="../images/il_794xN.1814117959_a2ma.jpg"
+        src="https://preview.colorlib.com/theme/hiroto/img/home-room/hr-1.jpg"
         alt=""
       />
     </div>
@@ -55,6 +68,13 @@
             alt=""
           />
           <div id="RowA-rooms">
+            <div id="icon">
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+            </div>
             <h1>Suite Room</h1>
             <div id="A1room-detail">
               <p>
@@ -73,170 +93,217 @@
                 <b>Bad :-</b>
                 1
               </p>
-            </div>
-            <div>
-              <button>View Room Details</button>
-            </div>
-          </div>
-          <div class="room1">
-            <img
-              src="https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406__340.jpg"
-              alt=""
-            />
-            <div id="RowA-rooms">
-              <h1>Standard Room</h1>
-              <div id="A1room-detail">
-                <p>
-                  <b>Max :-</b>
-                  3 Persons
-                </p>
-                <p>
-                  <b>Size :-</b>
-                  45m2
-                </p>
-                <p>
-                  <b>View :-</b>
-                  Sea View
-                </p>
-                <p>
-                  <b>Bad :-</b>
-                  1
-                </p>
-              </div>
+
+              <br />
               <div>
-                <button>View Room Details</button>
+                <button id="view-button">View Room Details</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="rooms2-detail">
-          <div class="room2">
-            <div id="RowB-rooms">
-              <h1>Family Room</h1>
-              <div id="B1room-detail">
-                <p>
-                  <b>Max :-</b>
-                  3 Persons
-                </p>
-                <p>
-                  <b>Size :-</b>
-                  45m2
-                </p>
-                <p>
-                  <b>View :-</b>
-                  Sea View
-                </p>
-                <p>
-                  <b>Bad :-</b>
-                  1
-                </p>
-              </div>
+        <div class="room1">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406__340.jpg"
+            alt=""
+          />
+          <div id="RowA-rooms">
+            <div id="icon">
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+            </div>
+            <h1>Standard Room</h1>
+            <div id="A1room-detail">
+              <p>
+                <b>Max :-</b>
+                3 Persons
+              </p>
+              <p>
+                <b>Size :-</b>
+                45m2
+              </p>
+              <p>
+                <b>View :-</b>
+                Sea View
+              </p>
+              <p>
+                <b>Bad :-</b>
+                1
+              </p>
+
+              <br />
               <div>
-                <button>View Room Details</button>
+                <button id="view-button">View Room Details</button>
               </div>
             </div>
-            <img
-              src="https://cdn.pixabay.com/photo/2016/09/18/03/28/travel-1677347__340.jpg"
-              alt=""
-            />
           </div>
-          <div class="room2">
-            <div id="RowB-rooms">
-              <h1>Deluxe Room</h1>
-              <div id="B1room-detail">
-                <p>
-                  <b>Max :-</b>
-                  3 Persons
-                </p>
-                <p>
-                  <b>Size :-</b>
-                  45m2
-                </p>
-                <p>
-                  <b>View :-</b>
-                  Sea View
-                </p>
-                <p>
-                  <b>Bad :-</b>
-                  1
-                </p>
-              </div>
+        </div>
+      </div>
+      <div class="rooms2-detail">
+        <div class="room2">
+          <div id="RowB-rooms">
+            <div id="icon">
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+            </div>
+            <h1>Family Room</h1>
+            <div id="B1room-detail">
+              <p>
+                <b>Max :-</b>
+                3 Persons
+              </p>
+              <p>
+                <b>Size :-</b>
+                45m2
+              </p>
+              <p>
+                <b>View :-</b>
+                Sea View
+              </p>
+              <p>
+                <b>Bad :-</b>
+                1
+              </p>
+
+              <br />
               <div>
-                <button>View Room Details</button>
+                <button id="view-button">View Room Details</button>
               </div>
             </div>
-            <img
-              src="https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406__340.jpg"
-              alt=""
-            />
           </div>
+          <img
+            src="https://cdn.pixabay.com/photo/2016/09/18/03/28/travel-1677347__340.jpg"
+            alt=""
+          />
+        </div>
+        <div class="room2">
+          <div id="RowB-rooms">
+            <div id="icon">
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+              <i id="icon-item"></i>
+            </div>
+            <h1>Deluxe Room</h1>
+            <div id="B1room-detail">
+              <p>
+                <b>Max :-</b>
+                3 Persons
+              </p>
+              <p>
+                <b>Size :-</b>
+                45m2
+              </p>
+              <p>
+                <b>View :-</b>
+                Sea View
+              </p>
+              <p>
+                <b>Bad :-</b>
+                1
+              </p>
+
+              <br />
+              <div>
+                <button id="view-button">View Room Details</button>
+              </div>
+            </div>
+          </div>
+          <img
+            src="https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406__340.jpg"
+            alt=""
+          />
         </div>
       </div>
     </div>
     <div id="description">
-      <div>
-        <h2 id="posts-head">Popular Posts</h2>
-        <div>
-          <div id="posts1">
-            <div>
-              <img id="post1" src="https://via.placeholder.com/80x80" alt />
-              <h2>Visiting Theme Parks Improves Your Health.</h2>
-              <p>by <b> John Doe </b> on Dec,19, 2017</p>
-            </div>
-            <div>
-              <img id="post2" src="https://via.placeholder.com/80x80" alt />
-              <h2>Visiting Theme Parks Improves Your Health.</h2>
-              <p>by <b> John Doe </b> on Dec,19, 2017</p>
-            </div>
-            <div>
-              <img id="post3" src="https://via.placeholder.com/80x80" alt />
-              <h2>Visiting Theme Parks Improves Your Health.</h2>
-              <p>by <b> John Doe </b> on Dec,19, 2017</p>
-            </div>
+      <h2 id="posts-head">Popular Posts</h2>
+      <div id="post-area">
+        <div id="posts1">
+          <div>
+            <img id="post1" src="https://via.placeholder.com/80x80" alt />
+            <h2>Visiting Theme Parks Improves Your Health.</h2>
+            <p>by <b> John Doe </b> on Dec,19, 2017</p>
           </div>
-          <div id="posts2">
-            <div>
-              <img id="post4" src="https://via.placeholder.com/80x80" alt />
-              <h2>Visiting Theme Parks Improves Your Health.</h2>
-              <p>by <b> John Doe </b> on Dec,19, 2017</p>
-            </div>
-            <div>
-              <img id="post5" src="https://via.placeholder.com/80x80" alt />
-              <h2>Visiting Theme Parks Improves Your Health.</h2>
-              <p>by <b> John Doe </b> on Dec,19, 2017</p>
-            </div>
-            <div>
-              <img id="post6" src="https://via.placeholder.com/80x80" alt />
-              <h2>Visiting Theme Parks Improves Your Health.</h2>
-              <p>by <b> John Doe </b> on Dec,19, 2017</p>
-            </div>
+          <div>
+            <img id="post2" src="https://via.placeholder.com/80x80" alt />
+            <h2>Visiting Theme Parks Improves Your Health.</h2>
+            <p>by <b> John Doe </b> on Dec,19, 2017</p>
           </div>
-          <div id="about">
-            <h1 id="posts-head">About Philosophy</h1>
-            <p>
-              Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero
-              malesuada feugiat. Pellentesque in ipsum id orci porta dapibus.
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
-              vel, ullamcorper sit amet ligula. Quisque velit nisi, pretium ut
-              lacínia in, elementum id enim, Donec sollicitudin molestie
-              malesuada
-            </p>
+          <div>
+            <img id="post3" src="https://via.placeholder.com/80x80" alt />
+            <h2>Visiting Theme Parks Improves Your Health.</h2>
+            <p>by <b> John Doe </b> on Dec,19, 2017</p>
+          </div>
+        </div>
+        <div id="posts2">
+          <div>
+            <img id="post4" src="https://via.placeholder.com/80x80" alt />
+            <h2>Visiting Theme Parks Improves Your Health.</h2>
+            <p>by <b> John Doe </b> on Dec,19, 2017</p>
+          </div>
+          <div>
+            <img id="post5" src="https://via.placeholder.com/80x80" alt />
+            <h2>Visiting Theme Parks Improves Your Health.</h2>
+            <p>by <b> John Doe </b> on Dec,19, 2017</p>
+          </div>
+          <div>
+            <img id="post6" src="https://via.placeholder.com/80x80" alt />
+            <h2>Visiting Theme Parks Improves Your Health.</h2>
+            <p>by <b> John Doe </b> on Dec,19, 2017</p>
+          </div>
+        </div>
+      </div>
+      <div id="about">
+        <h1 id="posts-head">About Philosophy</h1>
+        <div id="about-data">
+          <p>
+            Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero
+            malesuada feugiat. Pellentesque in ipsum id orci porta dapibus.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
+            vel, ullamcorper sit amet ligula. Quisque velit nisi, pretium ut
+            lacínia in, elementum id enim, Donec sollicitudin molestie malesuada
+          </p>
+          <div id="logos">
             <img
-            style="width: 34px; height: 23px; align-items: right"
-            src="https://www.masaischool.com/images/footer/xIcon.svg"
-            alt="twitter-logo"/>
+              style="width: 34px; height: 23px; align-items: right"
+              src="./images/facebook.png"
+              alt="facebook-logo"
+            />
             <img
-            style="width: 34px; height: 23px; align-items: right"
-            src="https://www.masaischool.com/images/footer/facebook-logo.svg"
-            alt="facebook-logo"
-             />
+              style="width: 34px; height: 23px; align-items: right"
+              src="./images/twitter.png"
+              alt="twitter-logo"
+            />
             <img
-            style="width: 34px; height: 23px; align-items: right"
-            src="https://www.masaischool.com/images/footer/instagram-logo.svg"
-            alt="instagram-logo"
+              style="width: 34px; height: 23px; align-items: right"
+              src="./images/instagram.png"
+              alt="instagram-logo"
             />
           </div>
+        </div>
+      </div>
+      <div id="tag-tab">
+        <h1>Tags</h1>
+        <div id="tags">
+          <button>SALAD</button>
+          <button>RECIPE</button>
+          <button>PLSCES</button>
+          <button>TIPS</button>
+          <button>FRIENDS</button>
+          <button>TRAVEL</button>
+          <button>EXERCISE</button>
+          <button>READING</button>
+          <button>RUNNING</button>
+          <button>SELF-HELP</button>
+          <button>VACATION</button>
         </div>
       </div>
     </div>
