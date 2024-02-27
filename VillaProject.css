@@ -8,8 +8,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 778px;
-  width: 1580px;
+  height: 100dvh;
+  width: 100%;
   margin-top: 0;
   padding: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -48,6 +48,12 @@ nav > h2 {
   font-weight: 100;
   margin: 10px 0 22px 0;
 }
+@media screen and (min-width: 500px) and (max-width: 1025px) {
+  #head-line {
+    text-align: center;
+    margin: 180px;
+  }
+}
 #a {
   font-size: 11px;
   color: white;
@@ -70,7 +76,7 @@ nav > h2 {
   margin: 30px auto;
   text-align: center;
 }
-#work-cont>h2{
+#work-cont > h2 {
   color: burlywood;
   font-size: 20px;
 }
@@ -85,24 +91,43 @@ nav > h2 {
     "gal__3 gal__4 gal__2 gal__2";
   gap: 30px;
   margin-bottom: 50px;
+ 
 }
 
 .rooms-img > img {
   height: 100%;
   width: 100%;
 }
+@media screen and (max-width: 979px) {
+  .rooms-img {
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(4, 15%);
+    grid-template-areas:
+      "gal__1 gal__1 gal__1 gal__1"
+      "gal__3 gal__3 gal__4 gal__4"
+      "gal__2 gal__2 gal__2 gal__2";
+  }
+}
 
 .image-1 {
   grid-area: gal__1;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .image-2 {
   grid-area: gal__3;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .image-3 {
   grid-area: gal__4;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .image-4 {
   grid-area: gal__2;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #mean-apartment {
@@ -118,47 +143,79 @@ nav > h2 {
   justify-content: space-evenly;
   text-align: center;
 }
-.rooms1-detail,.rooms2-detail {
+.rooms1-detail,
+.rooms2-detail {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
   background-color: white;
-  
+}
+@media screen and (min-width: 520px) and (max-width: 980px) {
+  .rooms1-detail,
+  .rooms2-detail {
+    flex-direction: column;
+    gap: px;
+  }
 }
 
-.room1{
+@media screen and (max-width: 980px) {
+  .rooms1-detail,
+  .rooms2-detail {
+    flex-direction: column;
+  }
+}
+
+.room1 {
   gap: 20px;
   display: flex;
-  justify-items:right;
+  justify-items: right;
   align-items: flex-end;
 }
-.room1,.room2 {
-  display:flex;
+.room1,
+.room2 {
+  display: flex;
   text-align: center;
   justify-content: space-evenly;
   flex: 1;
 }
-.room1>img ,.room2> img {
+.room1 > img,
+.room2 > img {
   height: 265px;
   width: 343px;
   width: 50%;
 }
-#icon>i{
+@media screen and (max-width: 520px){
+  .room1{
+    flex-direction: column;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+  }
+  .room1 > img{
+    height: 340px;
+    width: 470px;
+    
+  }
+
+
+}
+#icon > i {
   font-size: 12px;
   color: #fc728f;
   margin: 0 3px;
 }
-#icon-item::before{
+#icon-item::before {
   content: "\f005";
 }
-#icon-item{
+#icon-item {
   font-weight: 900;
   margin: 0 3px;
   font-style: normal;
   font-family: "Font Awesome 6 Free";
 }
-#RowA-rooms,#RowB-rooms {
+#RowA-rooms,
+#RowB-rooms {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,103 +223,133 @@ nav > h2 {
   gap: 10px;
   margin: auto;
 }
-#A1room-detail,#B1room-detail {
+#A1room-detail,
+#B1room-detail {
   padding: 10px;
   gap: 0px;
   /* border: 1px; */
 }
-#A1room-detail>p>b,#B1room-detail>p>b{
+#A1room-detail > p > b,
+#B1room-detail > p > b {
   color: black;
 }
-#A1room-detail > p,#B1room-detail>p {
+#A1room-detail > p,
+#B1room-detail > p {
   color: gray;
 }
-#view-button{
+#view-button {
   padding: 8px 20px;
   font-weight: 600;
   border-color: rgb(216, 215, 215);
   background-color: rgb(228, 228, 228);
-  
+  border-style: none;
 }
 
 #description {
-  width: 700px;
+  width: 800px;
   height: 900px;
   display: grid;
-  grid-template-columns: repeat(1,750px);
-  /* justify-content: center; */
+  grid-template-columns: repeat(2, 700px);
   align-items: center;
   margin: 0 20%;
-  margin-top: 45px;
+  margin-top: -290px;
 }
 
-#posts-head > posts1 {
+#post-headings {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 13px;
+  margin: 2% 24% 20px 21%;
+  /* width: 260px; */
 }
 
-#posts1 {
+#post-area {
+  /* display: flex; */
+  height: 300px;
   display: grid;
-  width: 250px;
+  grid-template-columns: repeat(2, 340px);
 }
-#posts2 {
-  display: grid;
-  width: 250px;
-}
+
 #post1 {
   display: flex;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  margin: 6%;
+  gap: 15px;
 }
 #post2 {
   display: flex;
-  grid-column-start: 2;
-  flex: 3;
+  margin: 6%;
+  gap: 15px;
 }
 #post3 {
   display: flex;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  margin: 6%;
+  gap: 15px;
 }
 #post4 {
   display: flex;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  margin: 6%;
+  gap: 15px;
 }
 #post5 {
   display: flex;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  margin: 5%;
+  gap: 15px;
 }
 #post6 {
   display: flex;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  margin: 5%;
+  gap: 15px;
+}
+#post1 > img {
+  height: 80px;
+  width: 80px;
+}
+#post2 > img {
+  height: 80px;
+  width: 80px;
+}
+#post3 > img {
+  height: 80px;
+  width: 80px;
+}
+#post4 > img {
+  height: 80px;
+  width: 80px;
+}
+#post5 > img {
+  height: 80px;
+  width: 80px;
+}
+#post6 > img {
+  height: 80px;
+  width: 80px;
 }
 #about {
   margin-top: 34px;
   height: 500px;
-  width: 300px;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  line-height: 30px;
+  width: 320px;
 
+  line-height: 27px;
 }
-#about-data{
+#about-data {
+  margin-top: 100px;
+  height: 500px;
+}
+#logos {
+  height: 20px;
+  width: 150px;
   margin-top: 20px;
 }
 
-#tag-tab{
+#tag-tab {
   text-align: center;
-  
 }
 #tags {
   display: flex;
-  flex-wrap:wrap;
-  width: 55%;
+  flex-wrap: wrap;
+  width: 38%;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -276,5 +363,4 @@ nav > h2 {
   border: none;
   font-size: 17px;
   padding: 10px;
-  
 }
