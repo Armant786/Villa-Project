@@ -91,7 +91,6 @@ nav > h2 {
     "gal__3 gal__4 gal__2 gal__2";
   gap: 30px;
   margin-bottom: 50px;
- 
 }
 
 .rooms-img > img {
@@ -181,27 +180,53 @@ nav > h2 {
 }
 .room1 > img,
 .room2 > img {
-  height: 265px;
-  width: 343px;
+  height: 40%;
+  width: 40%;
   width: 50%;
 }
-@media screen and (max-width: 520px){
-  .room1{
-    flex-direction: column;
-    margin: auto;
-    height: 400px;
-    width: 400px;
+@media screen and (min-width: 521px) and (max-width: 980px) {
+  .room1,
+  .room2 {
+  display: flex;
+
+  justify-content: space-evenly;
+  flex: 1;
+  width: 100%;
   }
-  .room1 > img{
-    height: 340px;
-    width: 470px;
-    
+  
+  .room1>img,
+  .room2>img {
+    width: 50%;
+    height: 39%;
+    gap: px;
   }
+  #RowB-rooms{
+    background-color:  #dddddd;
+    margin-top: 30px;
+  }
+
+
 
 
 }
+
+@media screen and (max-width: 520px) {
+  .room1,
+  .room2 {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    /* height: 400px;
+    width: 400px; */
+  }
+  .room1 > img,
+  .room2 > img {
+    height: 44%;
+    width: 100%;
+  }
+}
 #icon > i {
-  font-size: 12px;
+  font-size: 14px;
   color: #fc728f;
   margin: 0 3px;
 }
@@ -222,6 +247,9 @@ nav > h2 {
   align-items: center;
   gap: 10px;
   margin: auto;
+}
+#RowA-rooms>h1{
+  margin-bottom: 20px;
 }
 #A1room-detail,
 #B1room-detail {
@@ -249,27 +277,45 @@ nav > h2 {
   width: 800px;
   height: 900px;
   display: grid;
-  grid-template-columns: repeat(2, 700px);
+  grid-template-columns: repeat(3, 720px);
   align-items: center;
-  margin: 0 20%;
-  margin-top: -290px;
+  margin: 20 ;
+  margin-top: px;
+}
+@media screen and (min-width:520px) and (max-width:1080px){
+  #description{
+    grid-template-columns: repeat(1,50%);
+    margin: 10%;
+  }  
+  
 }
 
-#post-headings {
-  display: flex;
+#posts-head {
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
-  text-align: center;
+  /* text-align: center; */
   padding-top: 13px;
-  margin: 2% 24% 20px 21%;
+  margin: 25px 20% 20px 15%
   /* width: 260px; */
 }
 
 #post-area {
   /* display: flex; */
-  height: 300px;
+  height: 400px;
+  margin-top: -500px;
   display: grid;
-  grid-template-columns: repeat(2, 340px);
+  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 350px);
+  margin: 10 20% 0 10%;
+}
+@media screen and (min-width:520px) and(max-width:1080px){
+  #post-area{
+    grid-column:1;
+    grid-template-columns: repeat(1,800px);
+    height: 60%;
+  }
 }
 
 #post1 {
@@ -327,14 +373,15 @@ nav > h2 {
   width: 80px;
 }
 #about {
-  margin-top: 34px;
-  height: 500px;
+  margin-top: -472px;
+  margin-bottom: 0px;
+  height: 600px;
   width: 320px;
 
-  line-height: 27px;
+  line-height: 31px;
 }
 #about-data {
-  margin-top: 100px;
+  margin-top: 40px;
   height: 500px;
 }
 #logos {
